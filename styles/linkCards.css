@@ -1,0 +1,11 @@
+link-card {
+  display: inline-block;
+  padding: 1rem;
+  min-width: 280px;
+  height: 140px;
+  margin: 20px;
+}
+
+link-card .title {
+  padding-bottom: 10px;
+}

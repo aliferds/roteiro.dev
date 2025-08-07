@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title></title>
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="./styles/globals.css">
+    <link rel="stylesheet" href="./styles/linkCards.css">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+  <div class="container flex-center">
+    <a href="./index.html" class="link_logo">
+      <h1 class="logo">ROTEIRO <span class="inner_logo">dev</span></h1>
+    </a>
+  </div>
+</header>
+
+<main>
+  <section class="container">
+    <div class="flex-center flex-col">
+      <h2>O que você gostaria de saber?</h2>
+      <div>
+        <search-form></search-form>
+      </div>
+    </div>
+  </section>
+
+  <section class="flex-center flex-row">
+    <link-card>
+      <h2 slots="title" class="title">HTML</h2>
+      <p>Guias práticos e dicas de HTML.</p>
+    </link-card>
+    <link-card>
+      <h2 slots="title" class="title">CSS3</h2>
+      <p>Dicas e tutoriais de estilização.</p>
+    </link-card>
+    <link-card>
+      <h2 slots="title" class="title">Javascript</h2>
+      <p>Tudo sobre javascript</p>
+    </link-card>
+    <link-card>
+      <h2 slots="title" class="title">Gerador de códigos</h2>
+      <p>Gerador de códigos HTML, CSS e JS.</p>
+    </link-card>
+    <link-card>
+      <h2 slots="title" class="title">SEO</h2>
+      <p>Aprenda como optimizar o SEO do seu site.</p>
+    </link-card>
+    <link-card>
+      <h2 slots="title" class="title">Templates</h2>
+      <p>Componentes e sites inteiros para usar como base dos seus projeto.</p>
+    </link-card>
+    <link-card>
+      <h2 slots="title" class="title">Testes</h2>
+      <p>Aprenda a realizar testes de uma vez por todas.</p>
+    </link-card>
+    <link-card>
+      <h2 slots="title" class="title">Backend</h2>
+      <p>Aprenda a construir suas próprias API's e bancos de dados.</p>
+    </link-card>
+
+  </section>
+  <alifer-footer></alifer-footer>
+</main>
+
+<script type="module" src="./src/webComponents/index.js"></script>
+</body>
+</html>
