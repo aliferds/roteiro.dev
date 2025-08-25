@@ -38,6 +38,7 @@ export class LinkCard extends HTMLElement {
           text-decoration: none;
           color: inherit;
         }
+
       </style>
     `;
 

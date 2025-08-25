@@ -1,3 +1,5 @@
+@import url('./globals.css');
+
 link-card {
   display: inline-block;
   padding: 1rem;
@@ -8,4 +10,10 @@ link-card {
 
 link-card .title {
   padding-bottom: 10px;
+}
+
+link-card:hover,
+link-card:focus {
+  background-color: rgba(0,0,0,0.1);
+  cursor: pointer;
 }

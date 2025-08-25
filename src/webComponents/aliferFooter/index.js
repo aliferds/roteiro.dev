@@ -17,6 +17,12 @@ export class AliferFooter extends HTMLElement {
         .alifer-footer a {
           text-decoration: none;
           color: inherit;
+          outline: none;
+        }
+        .alifer-footer a:hover,
+        .alifer-footer a:focus {
+          cursor: pointer;
+          font-weight: bold;
         }
       </style>
       <footer class="alifer-footer">
