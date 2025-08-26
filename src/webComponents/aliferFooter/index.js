@@ -4,6 +4,10 @@ export class AliferFooter extends HTMLElement {
     this.attachShadow({ mode: 'open' });
     this.shadowRoot.innerHTML = `
       <style>
+        :host {
+          --text-color: inherit;
+          --link-color: blue;
+        }
         .alifer-footer {
           min-height: 20vh;
           display: flex;
@@ -18,11 +22,12 @@ export class AliferFooter extends HTMLElement {
           text-decoration: none;
           color: inherit;
           outline: none;
+          transition: all 0.3s ease-in-out;
         }
         .alifer-footer a:hover,
         .alifer-footer a:focus {
           cursor: pointer;
-          font-weight: bold;
+          color: var(--link-color);
         }
       </style>
       <footer class="alifer-footer">

@@ -52,13 +52,19 @@ export class SearchForm extends HTMLElement {
           justify-content: center;
           width: 32px;
           border: 0;
+          outline: none;
           height: 32px;
           background-color: var(--btn-color);
           border-radius: 50%;
           cursor: pointer;
-          transition: background-color 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out;
         }
-        .icon:hover {
+        .search-button:hover,
+        .search-button:focus {
+          background-color: color-mix(in srgb, var(--btn-hover-color), transparent 80%);
+        }
+        .search-button:hover .icon,
+        .search-button:focus .icon {
           fill: var(--btn-hover-color);
         }
         .icon {

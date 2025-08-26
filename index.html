@@ -28,50 +28,53 @@
 <main>
   <section class="container">
     <div class="flex-center flex-col">
-      <h2>O que você gostaria de saber?</h2>
+      <h2 class="py-1rem">O que você gostaria de saber?</h2>
       <div>
         <search-form></search-form>
       </div>
     </div>
   </section>
 
-  <section class="flex-center flex-row">
-    <link-card>
-      <h2 slots="title" class="title">HTML</h2>
-      <p>Guias práticos e dicas de HTML.</p>
-    </link-card>
-    <link-card>
+  <section class="interface">
+    <div class="responsive-grid">
+
+      <link-card>
+        <h2 slots="title" class="title">HTML</h2>
+        <p>Guias práticos e dicas de HTML.</p>
+      </link-card>
+      <link-card>
       <h2 slots="title" class="title">CSS3</h2>
       <p>Dicas e tutoriais de estilização.</p>
-    </link-card>
-    <link-card>
-      <h2 slots="title" class="title">Javascript</h2>
-      <p>Tudo sobre javascript</p>
-    </link-card>
-    <link-card>
-      <h2 slots="title" class="title">Gerador de códigos</h2>
-      <p>Gerador de códigos HTML, CSS e JS.</p>
-    </link-card>
-    <link-card>
-      <h2 slots="title" class="title">SEO</h2>
-      <p>Aprenda como optimizar o SEO do seu site.</p>
-    </link-card>
-    <link-card>
-      <h2 slots="title" class="title">Templates</h2>
-      <p>Componentes e sites inteiros para usar como base dos seus projeto.</p>
-    </link-card>
-    <link-card>
-      <h2 slots="title" class="title">Testes</h2>
-      <p>Aprenda a realizar testes de uma vez por todas.</p>
-    </link-card>
-    <link-card>
-      <h2 slots="title" class="title">Backend</h2>
-      <p>Aprenda a construir suas próprias API's e bancos de dados.</p>
-    </link-card>
-
+        </link-card>
+        <link-card>
+        <h2 slots="title" class="title">Javascript</h2>
+        <p>Tudo sobre javascript</p>
+      </link-card>
+      <link-card>
+        <h2 slots="title" class="title">Gerador de códigos</h2>
+        <p>Gerador de códigos HTML, CSS e JS.</p>
+      </link-card>
+      <link-card>
+        <h2 slots="title" class="title">SEO</h2>
+        <p>Aprenda como optimizar o SEO do seu site.</p>
+      </link-card>
+      <link-card>
+        <h2 slots="title" class="title">Templates</h2>
+        <p>Componentes e sites inteiros para usar como base dos seus projeto.</p>
+      </link-card>
+      <link-card>
+        <h2 slots="title" class="title">Testes</h2>
+        <p>Aprenda a realizar testes de uma vez por todas.</p>
+      </link-card>
+      <link-card>
+        <h2 slots="title" class="title">Backend</h2>
+        <p>Aprenda a construir suas próprias API's e bancos de dados.</p>
+      </link-card>
+    
+    </div>
   </section>
-  <alifer-footer></alifer-footer>
 </main>
+<alifer-footer></alifer-footer>
 
 <script type="module" src="./src/webComponents/index.js"></script>
 </body>

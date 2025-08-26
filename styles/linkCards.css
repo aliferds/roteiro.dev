@@ -6,6 +6,7 @@ link-card {
   min-width: 280px;
   height: 140px;
   margin: 20px;
+  border-radius: 10px;
 }
 
 link-card .title {
@@ -14,6 +15,6 @@ link-card .title {
 
 link-card:hover,
 link-card:focus {
-  background-color: rgba(0,0,0,0.1);
+  background-color: color-mix(in srgb, var(--l-blue), transparent 60%);
   cursor: pointer;
 }

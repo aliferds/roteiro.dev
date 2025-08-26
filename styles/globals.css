@@ -71,4 +71,46 @@ a.link_logo {
 .flex-row {
   flex-direction: row;
   flex-wrap: wrap;
+  gap: 1em;
+}
+
+.p-1rem {
+  padding: 1rem;
+}
+
+.py-1rem {
+  padding: 1rem 0;
+}
+
+.px-1rem {
+  padding: 0 1rem;
+}
+
+
+.interface {
+  max-width: clamp(320px, 80vw, 1200px);
+
+  margin: 0 auto;
+}
+
+.responsive-grid {
+  width: 100%;
+  align-self: center;
+  gap: 0.8em;
+  place-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+}
+
+link-card {
+  flex-grow: 1;
+  aspect-ratio: 3 / 2;
+}
+
+alifer-footer {
+  --link-color: var(--l-blue);
+}
+
+search-form {
+  --btn-hover-color: var(--l-blue);
 }
