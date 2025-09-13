@@ -28,7 +28,8 @@ export class LinkCard extends HTMLElement {
     const styles = `
       <style>
         :host {
-          display: block;
+          --display: block;
+          display: var(--display);
           border: 1px solid #ccc;
           box-shadow: 0 2px 4px rgba(0,0,0,0.1);
           width: 320px;
@@ -47,7 +48,8 @@ export class LinkCard extends HTMLElement {
       <div>
         <slot name="image"></slot>
         <slot name="title"></slot>
-        <slot></slot> 
+        <slot name="description"></slot> 
+        <slot></slot>
       </div>
     `;
 

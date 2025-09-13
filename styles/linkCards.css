@@ -9,6 +9,10 @@ link-card {
   border-radius: 10px;
 }
 
+link-card.none {
+  display: none;
+}
+
 link-card .title {
   padding-bottom: 10px;
 }
