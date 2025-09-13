@@ -114,3 +114,46 @@ alifer-footer {
 search-form {
   --btn-hover-color: var(--l-blue);
 }
+
+.faq_container {
+  max-width: 1280px;
+  padding: 1rem;
+}
+.faq_dl {
+  display: grid;
+  grid-column: 1;
+  border: 1px solid black;
+  padding: 10px 0 10px;
+}
+.faq_container .faq_title {
+  text-align: center;
+}
+.faq-question_container {
+  margin-bottom: 10px;
+}
+.faq-question_container:last-of-type {
+  margin-bottom: 0;
+}
+.faq_question {
+  font-weight: bold;
+  border: 1px solid black;
+  cursor: pointer;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.faq_question::after {
+  content: '+';
+}
+.faq_question.faq_question_open::after {
+  content: '-';
+}
+.faq_answer {
+  border: 1px solid black;
+  padding: 0 30px;
+  text-align: justify;
+}
+.faq_answer_hidde {
+  display: none;
+}
