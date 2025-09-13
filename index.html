@@ -18,10 +18,14 @@
 </head>
 <body>
 <header>
-  <div class="container flex-center">
+  <div class="container flex align-center justify-se">
     <a href="./index.html" class="link_logo">
       <h1 class="logo">ROTEIRO <span class="inner_logo">dev</span></h1>
     </a>
+    <div class="theme-container">
+      <span class="uppercase bold text-sm text-center block">dark mode</span>
+      <check-toggle id="theme-toggle" name="theme-toggle"></check-toggle>
+    </div>
   </div>
 </header>
 
@@ -38,36 +42,40 @@
   <section class="interface">
     <div class="responsive-grid">
       <link-card data-reference="html" href="./html/">
-        <h2 data-reference="html" slots="title" class="title">HTML</h2>
-        <p data-reference="html" slots="description">Boas práticas, HTML5 semântico e tudo sobre tags e atributos.</p>
+        <h2 data-reference="html" slots="title" class="title-uppercase">html</h2>
+        <p data-reference="html" slots="description">Boas práticas, <span class="uppercase">html5</span> semântico e tudo sobre tags e atributos.</p>
       </link-card>
       <link-card data-reference="css" href="./css/">
-        <h2 data-reference="css" slots="title" class="title">CSS</h2>
-        <p data-reference="css" slots="description">Dicas e tutoriais de estilização utilizando CSS3.</p>
+        <h2 data-reference="css" slots="title" class="title-uppercase">CSS</h2>
+        <p data-reference="css" slots="description">Dicas e tutoriais de estilização utilizando <span class="uppercase">css3</span>.</p>
       </link-card>
       <link-card data-reference="javascript" href="./js/">
-        <h2 data-reference="javascript" slots="title" class="title">Javascript</h2>
-        <p data-reference="javascript" slots="description">Tudo sobre javascript</p>
+        <h2 data-reference="javascript" slots="title" class="title">javascript</h2>
+        <p data-reference="javascript" slots="description">Tudo sobre <span class="capitalize">javascript</span></p>
       </link-card>
       <link-card data-reference="componentes" href="./componentes/">
-        <h2 data-reference="componentes" slots="title" class="title">Componentes</h2>
-        <p data-reference="componentes" slots="description">Biblioteca de componentes HTML, CSS e JS.</p>
+        <h2 data-reference="componentes" slots="title" class="title">componentes</h2>
+        <p data-reference="componentes" slots="description">biblioteca de componentes <span class="uppercase">html</span>, <span class="uppercase">css</span> e <span class="capitalize">js</span>.</p>
       </link-card>
       <link-card data-reference="seo" href="./seo/">
-        <h2 data-reference="seo" slots="title" class="title">SEO</h2>
-        <p data-reference="seo" slots="description">Aprenda como optimizar o SEO do seu site.</p>
+        <h2 data-reference="seo" slots="title" class="title-uppercase">seo</h2>
+        <p data-reference="seo" slots="description">Aprenda como optimizar o <span class="uppercase">seo</span> do seu site.</p>
       </link-card>
       <link-card data-reference="template" href="./templates/">
-        <h2 data-reference="template" slots="title" class="title">Templates</h2>
+        <h2 data-reference="template" slots="title" class="title">templates</h2>
         <p data-reference="template" slots="description">Componentes e sites inteiros para usar como base dos seus projeto.</p>
       </link-card>
       <link-card data-reference="tests" href="./testes/">
-        <h2 data-reference="tests" slots="title" class="title">Testes</h2>
+        <h2 data-reference="tests" slots="title" class="title">testes</h2>
         <p data-reference="tests" slots="description">Aprenda a realizar testes de uma vez por todas.</p>
       </link-card>
       <link-card data-reference="backend" href="./backend/">
-        <h2 data-reference="backend" slots="title" class="title">Backend</h2>
-        <p data-reference="backend" slots="description">Aprenda a construir suas próprias API's e bancos de dados.</p>
+        <h2 data-reference="backend" slots="title" class="title">backend</h2>
+        <p data-reference="backend" slots="description">Aprenda a construir suas próprias <span class="uppercase">API</span>'s e bancos de dados.</p>
+      </link-card>
+      <link-card data-reference="mobile" href="./mobile/">
+        <h2 data-reference="mobile" slots="title" class="title">mobile</h2>
+        <p data-reference="mobile" slots="description">Aprenda a fazer seus próprios aplicativos.</p>
       </link-card>
     
     </div>
