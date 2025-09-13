@@ -10,6 +10,8 @@ export class SearchForm extends HTMLElement {
       <style>
         :host {
           --search-color: #d1d5db;
+          --search-font-color: inherit;
+          --search-background-color: inherit;
           --icon-color: var(--search-color);
           --placeholder-color: var(--search-color);
           --border-color: var(--search-color);
@@ -24,6 +26,8 @@ export class SearchForm extends HTMLElement {
           margin: 0 auto;
         }
         .search-bar {
+          background-color: var(--search-background-color);
+          color: var(--search-font-color);
           flex-grow: 1.2;
           width: 100%;
           min-width: 250px;

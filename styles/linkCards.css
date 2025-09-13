@@ -1,6 +1,8 @@
 @import url('./globals.css');
 
 link-card {
+  flex-grow: 1;
+  aspect-ratio: 3 / 2;
   display: inline-block;
   padding: 1rem;
   min-width: 280px;
@@ -14,7 +16,21 @@ link-card.none {
 }
 
 link-card .title {
-  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+link-card .title,
+link-card p[slots='description']{
+  text-transform: lowercase;
+}
+
+link-card .title-uppercase{
+  text-transform: uppercase;
+}
+
+link-card .title:first-letter,
+link-card p[slots='description']:first-letter{
+  text-transform: capitalize;
 }
 
 link-card:hover,
