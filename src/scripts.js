@@ -50,8 +50,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  const darkMode = document.getElementById('theme-toggle');
-  
+  const darkMode = document.getElementById('theme-toggle').shadowRoot.querySelector('input[type="checkbox"]');
+
   if(darkMode){
     darkMode.addEventListener('click', () => {
       document.body.classList.toggle('dark');

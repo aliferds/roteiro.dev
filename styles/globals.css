@@ -217,6 +217,7 @@ check-toggle#theme-toggle {
   --color: var(--primary);
   --toggle-color: var(--l-blue);
   --checked-color: var(--blue);
+  caret-color: transparent;
 }
 
 /* ================= Componentes ============================ */

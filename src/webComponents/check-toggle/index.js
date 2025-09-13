@@ -77,4 +77,12 @@ export class CheckToggle extends HTMLElement {
   get name() {
     return this.shadowRoot.querySelector('input[type="checkbox"]').getAttribute('name');
   }
+  check() {
+    const c = this.shadowRoot.querySelector('input[type="checkbox"]');
+    if(c.checked) {
+      c.checked = false;
+    } else {
+      c.checked = true;
+    }
+  }
 }
