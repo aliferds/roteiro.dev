@@ -40,7 +40,7 @@ export class SearchForm extends HTMLElement {
 
         .search-bar:focus {
           outline: none;
-          box-shadow: 0 0 0 2px var(--search-color);
+          box-shadow: 0 0 0 2px var(--btn-hover-color);
           border-color: transparent;
         }
         .search-button {
